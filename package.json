@@ -1,0 +1,29 @@
+{
+  "name": "homebridge-flirfx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwight/homebridge-flirfx.git"
+  },
+  "author": "Alex Wight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwight/homebridge-flirfx/issues"
+  },
+  "homepage": "https://github.com/alexwight/homebridge-flirfx#readme",
+  "dependencies": {
+    "request": "^2.74.0"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  } 
+}
