@@ -24,6 +24,14 @@
                 "password" : "cameraPassword",
                 "name" : "Temperature",
                 "service" : "TemperatureSensor"
+        },
+        {
+                "accessory" : "FlirFX",
+                "ip" : "192.168.0.29",
+                "password" : "cameraPassword",
+                "name" : "Motion",
+                "service" : "MotionSensor",
+                "refreshInterval" : 10  // check for motion every 10 seconds
         }
     ]
 }

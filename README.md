@@ -2,9 +2,9 @@
 
 Supports sensors on FlirFX devices with the HomeBridge Platform
 
-This module does not support the motion sensor currently but it's in the works.
+Motion detection is acheived by checking the camera to see if it is currently recording because of motion detection (i.e. not a manual recording)
 
-This module does not support the video stream as neither does HomeKit.
+This module does not read or access the video stream as HomeKit doesn't have such a feature.
 
 # Installation
 
@@ -31,6 +31,14 @@ Configuration sample:
                 "password" : "cameraPassword",
                 "name" : "Temperature",
                 "service" : "TemperatureSensor"
+        },
+        {
+                "accessory" : "FlirFX",
+                "ip" : "192.168.0.29",
+                "password" : "cameraPassword",
+                "name" : "Motion",
+                "service" : "MotionSensor",
+                "refreshInterval" : 10  // check for motion every 10 seconds
         }
     ]
 ```
